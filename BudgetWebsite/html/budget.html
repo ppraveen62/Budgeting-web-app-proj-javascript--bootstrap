@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <script src="C:\Users\BALA\Documents\VS Code Frontend\BudgetWebsite\js\budget.js"></script>
+    <link rel="stylesheet" href="C:\Users\BALA\Documents\VS Code Frontend\BudgetWebsite\css\budget.css" />
+
+    <title>Budget</title>
+
+
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-3">Budget Planner</h1>
+    </div>
+    <div class="heading">
+        <div class="cul1">
+            <h2>Budget</h2>
+            <img src="C:\Users\BALA\Documents\VS Code Frontend\BudgetWebsite\images\indian-rupee.jpg" width="60"
+                alt="" />
+            <p class="amount">Rs <span id="budgetAmount">0</span></p>
+        </div>
+
+        <div class="cul2">
+            <h2>Expenses</h2>
+            <img src="C:\Users\BALA\Documents\VS Code Frontend\BudgetWebsite\images\indian-rupee.jpg" width="60"
+                alt="" />
+            <p class="amount">Rs <span id="expensesAmount">0</span></p>
+        </div>
+
+        <div class="cul3">
+            <h2>Balance</h2>
+            <img src="C:\Users\BALA\Documents\VS Code Frontend\BudgetWebsite\images\indian-rupee.jpg" width="60"
+                alt="" />
+            <p class="amount">Rs <span id="balanceAmount">0</span></p>
+        </div>
+    </div>
+    <section>
+        <div class="submit">
+            <h6>Enter your Budget <input type="number" id="budget" name="budget" value=0> <button
+                    onclick="addBudget()">Ok</button></h6><br>
+            <h4>Add Expenses</h4><br>
+            <h6>Enter your Expense Name <input type="text" id="expenseName" name="expenseName" value="Room Rent" required> Enter
+                Amount <input type="number" id="expenseAmt" name="expenseAmt" value=0 required> <button
+                    onclick="addExpense()">Add</button></h6>
+
+           
+        </div>
+        <div class="list">
+            <table class="table">
+                <thead>
+                    <tr id ="tablehead">
+                        <th>Expense Name</th>
+                        <th>Expense Amount</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color:rgb(7, 2, 19); color: white;">
+            © 2020 Copyright:
+            <a class="text-dark" href="https://github.com/ppraveen62/Budgeting-web-app-proj-javascript--bootstrap.git">PPK</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+</body>
+
+</html>
